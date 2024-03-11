@@ -1,0 +1,15 @@
+3. Tail recursion
+Answer: Occurs when the recursive call is the last statement executed in a recursive procedure or function
+
+4.
+Table 1:
+column: id (unique identifier),
+name: (student name)
+Table 2:
+column: id (unique identifier),
+name: (student name)
+
+The following SQL queries will result in students' names common to both tables having the same id, sorted alphabetically.
+Multiple students can have the same name but their ids will be unique.
+
+Answer: select s1.name from s1 INNER JOIN s2 ON s1.id=s2.id ORDER BY s1.name
